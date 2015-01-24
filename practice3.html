@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monster Mash</title>
+		<link type="text/css" href="css/style2.css" rel="stylesheet">
+		<body>
+			<div class="container">
+				<h1>simple tab structure</h1>
+				<ul id="tabs">
+					<li><a href="#male">male</a></li>
+					<li><a href="#female">female</a></li>
+					<li><a href="#all">all</a></li>
+					<li><a href="#new">Add New Finisher</a></li>
+				</ul>
+			<div id="content">
+				<div id="male" class="tabsection">
+					 <h4>Male Finishers</h4>
+                     <ul id="finishres_m"></ul>
+				</div>
+				<div id="female" class="tabsection">
+					<h4>female Finishers</h4>
+                     <ul id="finishres_f"></ul>
+					</div>
+				 <div id="all" class="tabsection">
+				 	<h4>All Finishers</h4>
+                     <ul id="finishres_all"></ul>
+					</div>
+					<div id="new" class="tabsection">
+				<h4>Add New Finisher</h4>
+				<form id="addRunner" name="addRunner" action="service.php" method="POST">
+				First Name: <input type="text" name="txtFirstName" id="txtFirstName" /> <br>
+				Last Name: <input type="text" name="txtLastName" id="txtLastName" /> <br>
+				Gender: <select id="ddlGender" name="ddlGender">
+				<option value="">--Please Select--</option>
+				<option value="f">Female</option>
+				<option value="m">Male</option>
+				</select><br>
+				Finish Time:
+				<input type="text" name="txtMinutes" id="txtMinutes" size="10" maxlength="2" />(Minutes)
+				<input type="text" name="txtSeconds" id="txtSeconds" size="10" maxlength="2" />(Seconds)
+				<br><br>
+				<button type="submit" name="btnSave" id="btnSave">Add Runner</button>
+				<input type="hidden" name="action" value="addRunner" id="action">
+				</form>
+				</div>
+			</div>
+			</div>
+      <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/script3.js"></script>
+	</body>
+		</body>
+		</html>

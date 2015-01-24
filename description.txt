@@ -1,0 +1,8 @@
+Contains simple tab structure.
+
+Submit form encoded data and saved to MysQl database.
+
+Used Ajax to get JSON data from SQL database and displays it in respective tabs.
+
+
+
